@@ -1,6 +1,8 @@
-from config import LOG, LOG_GROUP_ID, MUSIC_BOT_NAME
-from AlexaMusic.utils.database import is_on_off
-from AlexaMusic import app
+from pyrogram.enums import ParseMode
+
+from AnonXMusic import app
+from AnonXMusic.utils.database import is_on_off
+from config import LOGGER_ID
 
 
 async def play_logs(message, streamtype):
