@@ -5,7 +5,7 @@ from AnonXMusic import app
 
 @app.on_message(filters.incoming & filters.private, group=-1)
 async def must_join_channel(bot: Client, msg: Message):
-    if not "https://t.me/zzsvv":  # Not compulsory
+    if not "https://t.me/A1DIIU":  # Not compulsory
         return
     try:
         try:
