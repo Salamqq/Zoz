@@ -9,12 +9,12 @@ async def must_join_channel(bot: Client, msg: Message):
         return
     try:
         try:
-            await bot.get_chat_member("zzsvv", msg.from_user.id)
+            await bot.get_chat_member("A1DIIU", msg.from_user.id)
         except UserNotParticipant:
-            if "https://t.me/zzsvv".isalpha():
-                link = "https://t.me/zzsvv"
+            if "https://t.me/A1DIIU".isalpha():
+                link = "https://t.me/A1DIIU"
             else:
-                chat_info = await bot.get_chat("zzsvv")
+                chat_info = await bot.get_chat("A1DIIU")
                 link = chat_info.invite_link
             try:
                 await msg.reply(
@@ -28,4 +28,4 @@ async def must_join_channel(bot: Client, msg: Message):
             except ChatWriteForbidden:
                 pass
     except ChatAdminRequired:
-        print(f"I'm not admin in the MUST_JOIN chat @zzsvv !")
+        print(f"I'm not admin in the MUST_JOIN chat @A1DIIU !")
