@@ -1,29 +1,19 @@
 # Copyright (C) 2024 by Alexa_Help @ Github, < https://github.com/TheTeamAlexa >
-# Subscribe On YT < Jankari Ki Duniya >. All rights reserved. © Alexa © Yukki.
-
-""""
-TheTeamAlexa is a project of Telegram bots with variety of purposes.
-Copyright (c) 2024 -present Team=Alexa <https://github.com/TheTeamAlexa>
-
-This program is free software: you can redistribute it and can modify
-as you want or you can collabe if you have new ideas.
-"""
-
-
 from pyrogram import filters
+from strings.filters import command
 from pyrogram.types import Message
 
-from config import BANNED_USERS, adminlist
-from strings import get_command
-from AlexaMusic import app
-from AlexaMusic.utils.database import (
+from AnonXMusic import app
+from AnonXMusic.utils import extract_user, int_to_alpha
+from AnonXMusic.utils.database import (
     delete_authuser,
     get_authuser,
     get_authuser_names,
     save_authuser,
 )
-from AlexaMusic.utils.decorators import AdminActual, language
-from AlexaMusic.utils.formatters import int_to_alpha
+from AnonXMusic.utils.decorators import AdminActual, language
+from AnonXMusic.utils.inline import close_markup
+from config import BANNED_USERS, adminlist
 
 # Command
 AUTH_COMMAND = get_command("AUTH_COMMAND")
