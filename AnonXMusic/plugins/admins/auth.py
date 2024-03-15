@@ -1,7 +1,8 @@
 # Copyright (C) 2024 by Alexa_Help @ Github, < https://github.com/TheTeamAlexa >
 from pyrogram import filters
-from strings.filters import command
 from pyrogram.types import Message
+
+from config import BANNED_USERS, adminlist
 
 from AnonXMusic import app
 from AnonXMusic.utils import extract_user, int_to_alpha
